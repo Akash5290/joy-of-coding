@@ -1,0 +1,12 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+int main()
+{
+   int i=4,n=9,j=10;
+   printf("i=%d,n=%d,j=%d\n",i,n,j);
+   n>i ? printf("n is greater than i\n"): printf("i is greater than n \n");
+   n>j ? printf("n is greater than j\n"): printf("j is greater than n\n");
+   i>j ? printf("i is greater than j\n"): printf("j is greater than i\n");
+   return 0;
+}
