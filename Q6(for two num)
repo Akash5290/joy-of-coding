@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+   int i=4,n=9;
+   n>i ? printf("n is greater than i\n"):printf("the n is lesser than i");
+    return 0;
+}
