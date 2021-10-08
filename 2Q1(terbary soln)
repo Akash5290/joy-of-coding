@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int age;
+    printf("enter your age:\n");
+    scanf("%d",&age);
+    age>18 ? printf("u r eligible to vote\n"):printf("sorry u r not eligible to vote\n");
+    return;
+}
