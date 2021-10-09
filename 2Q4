@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{
+  int a=3250,b=6505,c=12012,d=22340,rnk;
+  printf("enter your rank:");
+  scanf("%d",&rnk);
+ if (rnk<d)
+ {
+     printf("Courses available for your rank:\n");
+     printf("MEC\n");
+       exit;
+     if(rnk<c)
+     {
+         printf("EandC\n");
+         exit;
+         if(rnk<b)
+         {
+             printf("ISE\n");
+             exit;
+             if(rnk<a)
+             {
+                 printf("CSE\n");
+                 exit;
+             }
+         }
+     }
+ }
+ else
+ {
+     printf("admission not possible at RNSIT");
+ }
+
+return;
+   }
