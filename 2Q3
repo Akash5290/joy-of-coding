@@ -1,23 +1,61 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 int main()
 {
-   int i=0,j=0,ans1=0;
-   char k[10];
+   int i,j,ans1,ans2,ans4,ans5;
+   float ans3;
+   char k ;
    printf("enter num1\n");
    scanf("%d",&i);
    printf("enter num2\n");
    scanf("%d",&j);
-   printf("mention the operation in words\n");
-   scanf("%s",k);
-   printf("%s",k);
-   switch(k)
-   {
-     case sum:ans1=i+j;
-            printf("the sum of two numbers:%d",ans1);
-
+   printf("mention the first letter of the operation of your choice\nFor example:addition(a),subtraction(s),division(d),multiplication(m)\nmodulus(r)\n");
+   printf("or use appropriate symbols(+,-,/,*,%)\n");
+   scanf(" %c", &k);
+   if(i>0&&j>0)
+  {
+     switch(k)
+  {
+      case  'a' :  ans1=i+j;
+                   printf("the sum of two numbers:%d",ans1);
+                   break;
+    case 's': ans2=i-j;
+                   printf("the difference of two numbers :%d",ans2);
+                   break;
+    case 'd':ans3=i/j;
+                   printf("the quotient of two numbers is:%f",ans3);
+                   break;
+    case 'm':ans4=i*j;
+                   printf("the product of the two numbers is :%d",ans4);
+                   break;
+    case 'r':ans5=i%j;
+                   printf("modulus of the two numbers is:%d",ans5) ;
+                   break;
+      case  '+' :  ans1=i+j;
+                   printf("the sum of two numbers:%d",ans1);
+                   break;
+    case '-': ans2=i-j;
+                   printf("the difference of two numbers :%d",ans2);
+                   break;
+    case '/':ans3=i/j;
+                   printf("the quotient of two numbers is:%f",ans3);
+                   break;
+    case '*':ans4=i*j;
+                   printf("the product of the two numbers is :%d",ans4);
+                   break;
+    case '%':ans5=i%j;
+                   printf("modulus of the two numbers is:%d",ans5) ;
+                   break;
+    default: printf("invalid input\n");
 
    }
-   return;
    }
+ else
+{
+     printf("invalid input\n");
+ }
+return;
+   }
+
