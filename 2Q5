@@ -1,0 +1,42 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main()
+{
+  int a,b,c,tot,s;
+  printf("enter the total number of books needed(max lim:20000)\n");
+  scanf("%d",&a);
+
+  if(a<10000)
+  {
+            printf ("no discount!!!\n");
+                     b=a*10;
+                    printf("the total cost:%d",b);
+
+  }
+  else if (a<15000)
+  {
+             printf("Hey !! you got 10 percent discount !!!\n");
+                     c=(a*0.1);
+                     tot=a-c;
+                     printf("the total cost:%d",tot);
+  }
+  else
+  {
+      if(a<20000)
+            {
+              printf("Hey !! you got 20 percent discount !!!\n");
+                      c=(a*0.2);
+                      tot=a-c;
+                      printf("the total cost:%d",tot);
+            }
+       else
+            {
+              printf("invalid input");
+            }
+  }
+
+
+return;
+   }
