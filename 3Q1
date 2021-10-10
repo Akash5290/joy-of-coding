@@ -16,7 +16,7 @@ while(n!=0)
      rem=n%m;
      res=n-rem;
      res1=res/m;
-     printf("%d",res1);
+     printf("%d\n",res1);
      m=m/10;
      n=n-res;
      }
