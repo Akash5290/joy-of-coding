@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main()
+{
+int n,rem,res,res1,count,t,m;
+printf("enter the number\n");
+scanf("%d",&n);
+count = log10(n) + 1;
+t=pow(10,count);
+m=t/10;
+while(n!=0)
+{
+     rem=n%m;
+     res=n-rem;
+     res1=res/m;
+     m=m/10;
+     n=n-res;
+     if(res1==0)
+     {
+         continue;
+     }
+      printf("%d,",res1);
+     }
+
+return;
+   }
