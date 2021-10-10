@@ -1,0 +1,33 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main()
+{
+int n,rem,res,res1,count,t,m,sum=0;
+int srem,sres,res2,sum1=0;
+printf("enter the number\n");
+scanf("%d",&n);
+count=log10(n)+1;
+ while(n!=0)
+  {
+   rem=n%10;
+   res=n-rem;
+   res1=res/10;
+   n=res1;
+   sum=rem+sum;
+  }
+printf("\ntotal number of digits:%d",count);
+printf("\nsum of digits:%d",sum);
+ while(sum!=0)
+ {
+   srem=sum%10;
+   sres=sum-srem;
+   res2=sres/10;
+   sum=res2;
+   sum1=srem+sum1;
+ }
+ printf("\nsingle digit sum:%d",sum1);
+
+return;
+   }
