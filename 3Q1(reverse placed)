@@ -7,6 +7,7 @@ int main()
 int n,rem,res,res1,count,t,m;
 printf("enter the number\n");
 scanf("%d",&n);
+count=log10(n)+1;
 while(n!=0)
 {
    rem=n%10;
@@ -14,8 +15,6 @@ while(n!=0)
    res=n-rem;
    res1=res/10;
    n=res1;
-   count++;
-
 }
  printf("\ntotal number of digits:%d",count);
 
