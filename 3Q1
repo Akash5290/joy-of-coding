@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<math.h>
+
+int main()
+{
+int n,rem,res,res1,count,t,m;
+printf("enter the number\n");
+scanf("%d",&n);
+count = log10(n) + 1;
+printf("total no of digits:%d\n",count);
+t=pow(10,count);
+m=t/10;
+while(n!=0)
+{
+     rem=n%m;
+     res=n-rem;
+     res1=res/m;
+     printf("%d",res1);
+     m=m/10;
+     n=n-res;
+     }
+
+return;
+   }
