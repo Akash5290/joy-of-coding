@@ -4,7 +4,8 @@
 
 int main()
 {
-int n,rem,res,res1,count,t,m,res2;
+
+  int n,rem,res,res1,res2,count,t,m;
 printf("enter the number\n");
 scanf("%d",&n);
 count = log10(n) + 1;
@@ -16,9 +17,13 @@ while(n!=0)
      res=n-rem;
      res1=res/m;
      res2=res1+1;
-     printf("%d",res2);
      m=m/10;
      n=n-res;
+     if(res1==9)
+     {
+         res2=0;
+     }
+      printf("%d",res2);
      }
 
 return;
