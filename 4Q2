@@ -15,7 +15,7 @@ switch(z)
 printf("enter the first letter of your name\n(Mr.Int='i',Mr.Float='f',Mr.Char='c'):");
 scanf(" %c",&n);
 if(n!=i&&n!=f&&n!=c)
-{printf("error")
+{printf("error");
 }
 else
 {switch(n)
