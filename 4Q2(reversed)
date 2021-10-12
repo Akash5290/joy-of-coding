@@ -14,7 +14,11 @@ switch(z)
     case 5 :
 printf("enter the first letter of your name\n(Mr.Int='i',Mr.Float='f',Mr.Char='c'):");
 scanf(" %c",&n);
-switch(n)
+if(n!=i&&n!=f&&n!=c)
+{printf("error");
+}
+else
+{switch(n)
 {
     case 'i':printf("your details are already saved.\n");
                  break;
@@ -83,4 +87,5 @@ switch(z)
               }
         }
     }
+}
 }
