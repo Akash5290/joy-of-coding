@@ -54,12 +54,12 @@ switch(z)
                   switch (e)
                  {
                      case 'i':printf("your weekly wages are:\n");
-                                  printf("Monday:%d\n",a[5]);
-                                  printf("Tuesday:%d\n",a[4]);
-                                  printf("Wednesday:%d\n",a[3]);
-                                  printf("Thursday:%d\n",a[2]);
-                                  printf("Friday:%d\n",a[1]);
-                                  printf("Saturday:%d\n",a[0]);
+                                  printf("Monday:%d\n",a[0]);
+                                  printf("Tuesday:%d\n",a[1]);
+                                  printf("Wednesday:%d\n",a[2]);
+                                  printf("Thursday:%d\n",a[3]);
+                                  printf("Friday:%d\n",a[4]);
+                                  printf("Saturday:%d\n",a[5]);
                                   T=a[0]+a[1]+a[2]+a[3]+a[4]+a[5];
                                   printf("Total weekly salary:%d\n",T);
                                   X=T/6;
@@ -68,12 +68,12 @@ switch(z)
 
                                   break;
                         case 'f':printf("your weekly wages are:\n");
-                                  printf("Monday:%0.2f\n",b[5]);
-                                  printf("Tuesday:%0.2f\n",b[4]);
-                                  printf("Wednesday:%0.2f\n",b[3]);
-                                  printf("Thursday:%0.2f\n",b[2]);
-                                  printf("Friday:%0.2f\n",b[1]);
-                                  printf("Saturday:%0.2f\n",b[0]);
+                                  printf("Monday:%0.2f\n",b[0]);
+                                  printf("Tuesday:%0.2f\n",b[1]);
+                                  printf("Wednesday:%0.2f\n",b[2]);
+                                  printf("Thursday:%0.2f\n",b[3]);
+                                  printf("Friday:%0.2f\n",b[4]);
+                                  printf("Saturday:%0.2f\n",b[5]);
                                   Q=b[0]+b[1]+b[2]+b[3]+b[4]+b[5];
                                   printf("Total weekly salary:%0.2f\n",Q);
                                   Y=Q/6;
