@@ -64,7 +64,6 @@ switch(z)
                                   printf("Total weekly salary:%d\n",T);
                                   X=T/6;
                                   printf("average salary of the week:%0.2f\n",X);
-                                  printf("PARTY!!!!! on 'Saturday'!!!");
                                   break;
                         case 'f':printf("your weekly wages are:\n");
                                   printf("Monday:%0.2f\n",b[0]);
@@ -77,7 +76,6 @@ switch(z)
                                   printf("Total weekly salary:%0.2f\n",Q);
                                   Y=Q/6;
                                   printf("average salary of the week:%0.2f\n",Y);
-                                  printf("PARTY!!!!! on 'Friday'!!!");
                                   break;
                         case 'c':printf("your weekly wages are:\n");
                                   printf("M:%d\n",c[0]);
