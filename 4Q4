@@ -1,0 +1,105 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<conio.h>
+
+int main()
+{
+int a[6]={560, 660,590,760,480, 960},z,c[6],T,S;
+float b[6]={97.50,66.0, 79.25,76.55,98.45,96.40},Q,X,Y,Z;
+char n,i,f,e;
+printf("press 5 to enter the details\nor press 1 to exit:");
+scanf("%d",&z);
+switch(z)
+{
+    case 5 :
+printf("enter the first letter of your name\n(Mr.Int='i',Mr.Float='f',Mr.Char='c'):");
+scanf(" %c",&n);
+switch(n)
+{
+    case 'i':printf("your details are already saved.\n");
+                 break;
+    case 'f':printf("your details are already saved.\n");
+                 break;
+    case 'c':printf("enter your daily wages:\n");
+                   printf("M:");
+                  scanf("%d",&c[0]);
+                   printf("T:");
+                   scanf("%d",&c[1]);
+                   printf("W:");
+                   scanf("%d",&c[2]);
+                   printf("T:");
+                   scanf("%d",&c[3]);
+                   printf("F:");
+                   scanf("%d",&c[4]);
+                   printf("S:");
+                   scanf("%d",&c[5]);
+                   break;
+}
+printf("press space button to update  the screen\n");
+getch();
+system("cls");
+
+printf("press 0 to see your weekly wages:\nOR\npress 1 to exit:");
+scanf("%d",&z);
+switch(z)
+{
+    case 0: printf("enter the first letter of your name:");
+                 scanf(" %c",&e);
+                 if(e!=n)
+                 {
+                     printf("error=please try again\n(your name doesn't match)");
+                 }
+                 else
+              {
+                  switch (e)
+                 {
+                     case 'i':printf("your weekly wages are:\n");
+                                  printf("Monday:%d\n",a[5]);
+                                  printf("Tuesday:%d\n",a[4]);
+                                  printf("Wednesday:%d\n",a[3]);
+                                  printf("Thursday:%d\n",a[2]);
+                                  printf("Friday:%d\n",a[1]);
+                                  printf("Saturday:%d\n",a[0]);
+                                  T=a[0]+a[1]+a[2]+a[3]+a[4]+a[5];
+                                  printf("Total weekly salary:%d\n",T);
+                                  X=T/6;
+                                  printf("average salary of the week:%0.2f\n",X);
+                                  printf("PARTY!!!!! on 'Saturday'!!!");
+
+                                  break;
+                        case 'f':printf("your weekly wages are:\n");
+                                  printf("Monday:%0.2f\n",b[5]);
+                                  printf("Tuesday:%0.2f\n",b[4]);
+                                  printf("Wednesday:%0.2f\n",b[3]);
+                                  printf("Thursday:%0.2f\n",b[2]);
+                                  printf("Friday:%0.2f\n",b[1]);
+                                  printf("Saturday:%0.2f\n",b[0]);
+                                  Q=b[0]+b[1]+b[2]+b[3]+b[4]+b[5];
+                                  printf("Total weekly salary:%0.2f\n",Q);
+                                  Y=Q/6;
+                                  printf("average salary of the week:%0.2f\n",Y);
+                                  printf("PARTY!!!!! on 'Friday'!!!");
+
+
+                                  break;
+                        case 'c':printf("your weekly wages are:\n");
+                                  printf("M:%d\n",c[0]);
+                                  printf("T:%d\n",c[1]);
+                                  printf("W:%d\n",c[2]);
+                                  printf("T:%d\n",c[3]);
+                                  printf("F:%d\n",c[4]);
+                                  printf("S:%d\n",c[5]);
+                                   S=c[0]+c[1]+c[2]+c[3]+c[4]+c[5];
+                                  printf("Total weekly salary:%d\n",S);
+                                  Z=S/6;
+                                  printf("average salary of the week:%0.2f",Z);
+
+
+                                  break;
+
+                }
+    case 1: exit;
+              }
+        }
+    }
+}
