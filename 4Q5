@@ -1,0 +1,41 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include<conio.h>
+
+int main()
+{
+int i,a[10],count=0;
+printf("enter numbers from 1 to 10(U can jumble it)but can use each number only once:\n");
+for(i=0;i<10;i++)
+{
+    scanf("%d",&a[i]);
+}
+
+for (i=0;i<10;i++)
+{
+    if(a[i]==9)
+    {
+        count++;
+    }
+}
+for (i=0;i<10;i++)
+{
+    if (count==1)
+    {
+        if(a[i]==9)
+        {printf("number of guesses:%d\n",i);
+        }
+        }
+    else if(count==0)
+    {
+        printf("There are no number 9 in the input");
+        break;
+    }
+    else
+    {
+        printf("error(can use number 9 only once)");
+        break;
+    }
+}
+return;
+}
