@@ -8,3 +8,17 @@ scanf("%s",a);
 printf("The entered string :%s",a);
 return ;
 }
+
+
+*/using puts statement/*  
+
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+char a[10];
+printf("enter your name:");
+gets(a);
+puts(a);
+return ;
+}
