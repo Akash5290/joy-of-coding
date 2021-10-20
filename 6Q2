@@ -1,0 +1,48 @@
+*/to get the length of the input/*
+
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+char a[100]="R N S Institute of Technology";
+printf("%s",a);
+printf("\nthe length of input is: %d", strlen(a));
+
+return ;
+}
+
+*/to  concatenate the given string/*
+
+#include <stdio.h>
+#include<stdlib.h>
+int main()
+{
+
+char a[100]="R N S Institute of Technology";
+char b[100]=" Bengaluru";
+printf("%s\n",a);
+strcat(a,b);
+printf("The extended sentence is:%s",a);
+
+
+return ;
+}
+*/to print the given string in uppercase/*
+#include <ctype.h>
+#include <stdio.h>
+
+int main()
+{
+    int j = 0;
+    char str[] = "R N S Institute of technology Bengaluru\n";
+    char ch;
+
+    while (str[j]) {
+        ch = str[j];
+        putchar(toupper(ch));
+        j++;
+    }
+
+    return 0;
+}
