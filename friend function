@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class result;
+class student
+{
+    private:
+            char name[20];
+            int marks;
+            friend class result;
+            //friend void result::accept(student &);
+            //friend void result::display(const student &);
+};
+class result
+{
+    public:
+            void accept(student &obj1)
+            {
+                cout<<"enter student name"<<endl;
+                cin>>obj1.name;
+                cout<<"enter marks"<<endl;
+                cin>>obj1.marks;
+            }
+            void display(const student &obj1)
+            {
+                cout<<"name of the student:"<<obj1.name<<endl;
+                cout<<"marks obtained:"<<obj1.marks<<endl;
+            }
+};
+int main()
+{
+    result a;
+    student obj1;
+    a.accept(obj1);
+    a.display(obj1);
+}
